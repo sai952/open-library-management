@@ -20,12 +20,11 @@ export default function TagsMultiSelect({ selectedTags, setSelectedTags, setErro
           return;
         }
 
-        // console.log('data', data);
+       
 
         const formattedData = data.map((item) => ({ value: item.id, label: item.tag_name }))
 
-        // console.log('formatted data', formattedData);
-
+        
         setFormattedTags(formattedData);
         setTagsLoading(false);
       } catch (err) {
